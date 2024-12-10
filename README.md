@@ -19,3 +19,7 @@ export interface SchemaItemType {
 ```
 
 ## Examples
+
+<video width="640" height="320" controls>
+  <source src="./public/demos.mov" type="video/mp4">
+</video>
