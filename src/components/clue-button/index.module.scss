@@ -1,0 +1,41 @@
+.card {
+    padding: 34px 46px;
+    margin: 26px 0;
+    border-radius: 16px;
+    background: #E8F0FF;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &.hide {
+        display: none;
+    }
+
+    $p: &;
+
+    &-content {
+        &-title {
+            font-size: 22px;
+            line-height: 30px;
+            color: #323233;
+            margin-bottom: 0;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 18px;
+            color: #646566;
+            margin-top: 6px;
+            margin-bottom: 0;
+
+            &.cardDesc {
+                line-height: 24px;
+            }
+        }
+    }
+
+    .btn {
+        margin-left: 32px;
+    }
+}

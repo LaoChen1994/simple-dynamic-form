@@ -1,0 +1,63 @@
+.wrap {
+    border-radius: 16px;
+    background: #E8F0FF;
+    margin: 26px 0;
+    padding: 36px 24px;
+
+    .prefix {
+        font-size: 18px;
+        line-height: 26px;
+        color: gray;
+        margin-bottom: 4px;
+    }
+
+    .title {
+        font-size: 28px;
+        margin: 0 0 16px;
+        color: black;
+        font-weight: 600;
+    }
+}
+
+.collapse {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 4px;
+    border-bottom: 1px solid #CFE0FF;
+    overflow: hidden;
+    cursor: pointer;
+
+    $prefix: &;
+
+    .icon {
+        width: 36px;
+        height: 36px;
+        font-size: 24px;
+        line-height: 36px;
+        margin-left: 20px;
+        text-align: center;
+        color: blue;
+    }
+
+    &-title {
+        font-size: 18px;
+        margin-bottom: 8px;
+        font-weight: 600;
+    }
+
+    &-answer {
+        font-size: 16px;
+        line-height: 32px;
+        color: #646566;
+        max-height: 0;
+        transition: max-height 0.5s ease-in-out;
+        overflow: hidden;
+    }
+
+    &.opened {
+        #{$prefix}-answer {
+            max-height: 300px;
+        }
+    }
+}
