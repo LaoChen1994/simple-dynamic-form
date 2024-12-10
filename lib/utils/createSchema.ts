@@ -51,6 +51,16 @@ export interface SchemaItem<T extends PropsItemType[]>
   defaultValue: GetDefaults<T>;
 }
 
+/**
+ * 
+ * 
+ * 处理schema的工厂方法
+ * @param name 
+ * @param component 
+ * @param props 
+ * @param defaultValue 
+ * @returns 
+ */
 export function createSchemaItem<T extends PropsItemType[]>(
   name: string,
   component: string,
@@ -65,7 +75,7 @@ export function createSchemaItem<T extends PropsItemType[]>(
   };
 }
 
-// createSchemaItem(
+// const schemas = createSchemaItem(
 //   '线索卡片',
 //   'ClueCard',
 //   [
