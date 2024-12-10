@@ -4,6 +4,7 @@
   "type": "module",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "keywords": ["react-hook-form", "dynamic-form", "tailwindcss"],
   "scripts": {
     "dev": "vite",
     "build": "rm -rf ./dist/* && tsc && vite build",
