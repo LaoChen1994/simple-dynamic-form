@@ -12,6 +12,9 @@
     "preview": "vite preview",
     "prepublishOnly": "npm run build"
   },
+  "files": [
+    "./dist/*"
+  ],
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.2",
     "@radix-ui/react-icons": "^1.3.2",
