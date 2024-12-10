@@ -16,13 +16,6 @@ const RenderComponents = {
 // mock本地写死的schema
 const schemas = [QuestionSchema, ClueButtonSchema];
 
-const Components = (schemas ?? []).reduce<Record<string, string>>((p, c) => {
-  return {
-    ...p,
-    [c.component]: c.renderComponent || c.component,
-  };
-}, {});
-
 type ConfirmFunction = Required<ConfiguratorProps>["handleConfirm"]
 
 const App = () => {
@@ -53,9 +46,7 @@ const App = () => {
 
         {
           renderList.map(item => {
-            const Component = RenderComponents[Components[item.component]];
-
-            console.log('comp =>', Component, Components, item.component)
+            const Component = RenderComponents[item.component];
 
             if (!Component) return null
 

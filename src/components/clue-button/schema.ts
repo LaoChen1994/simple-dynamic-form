@@ -2,8 +2,7 @@ import type { SchemaItemType } from '@/component/SchemaItem';
 
 const schemas: SchemaItemType = {
   name: '线索卡片',
-  component: 'ClueButton',
-  renderComponent: 'ClueCard',
+  component: 'ClueCard',
   props: [
       {
           name: 'title',

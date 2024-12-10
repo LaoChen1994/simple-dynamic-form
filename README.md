@@ -11,7 +11,6 @@ export type PropsItemType = InputFieldProps | SelectFieldProps | ArrayFieldProps
 export interface SchemaItemType {
     name: string;
     component: string;
-    renderComponent?: string;
     props: PropsItemType[];
     defaultValue: unknown;
 }
