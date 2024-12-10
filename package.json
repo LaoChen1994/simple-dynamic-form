@@ -1,6 +1,5 @@
 {
   "name": "simple-dynamic-form",
-  "private": true,
   "version": "0.0.1",
   "type": "module",
   "module": "dist/index.js",
@@ -12,6 +11,14 @@
     "preview": "vite preview",
     "prepublishOnly": "npm run build"
   },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaoChen1994/simple-dynamic-form.git"
+  },
+  "license": "MIT",
   "files": [
     "package.json",
     "./dist/*"

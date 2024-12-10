@@ -21,3 +21,13 @@ export interface SchemaItemType {
 ## Examples
 
 ![](./public/demos.mov)
+
+## Develop
+
+```bash
+
+pnpm i
+
+pnpm dev
+
+```
