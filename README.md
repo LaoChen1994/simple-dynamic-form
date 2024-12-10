@@ -20,7 +20,7 @@ export interface SchemaItemType {
 
 ## Examples
 
-![](./public/demos.mov)
+![](./public/demos.gif)
 
 ## Develop
 
